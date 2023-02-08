@@ -1818,7 +1818,7 @@ def inverse_laplace(ex, s, t, algorithm='maxima'):
     Transform an expression involving a time-shift, via SymPy::
 
         sage: inverse_laplace(1/s^2*exp(-s), s, t, algorithm='sympy')
-        -(log(e^(-t)) + 1)*heaviside(t - 1)
+        (t - 1)*heaviside(t - 1)
 
     The same instance with Giac::
 
